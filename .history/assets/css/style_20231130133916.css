@@ -19,7 +19,7 @@ body{
     transform-style: preserve-3d;
 }
 
-.cardSide:hover{
+.card:hover{
     transform: rotateY(180deg);
 }
 
@@ -31,26 +31,11 @@ body{
     border-radius: 5px;
 }
 
-.cardBack{
-   
-    transform: rotateY(180deg);
-}
-
-.sideImg{
-    width: 100%;
-    height: 100%;
+.cardFront{
     background: cover;
-    border-radius: 5px;
 }
 
-.textSide{
-    position: absolute;
-    top: 5px;
-    left: 85px;
-    padding: 10px;
-    background-color: #257b46b9;
-    color: white;
-    border-radius: 5px;
-    box-shadow: #257b4694 0px 5px 15px;
-    font-size: 25px;
+.cardBack{
+    background: cover;
+    transform: rotateY(180deg);
 }

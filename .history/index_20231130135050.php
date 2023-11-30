@@ -147,68 +147,36 @@
                             </div>
                         </div>
                     </section>
-                    <section>
-                        <h2>Avant et aprés</h2>
-                        <div class="d-flex">
-                            <div id="cardContainer" class="cardContainer">
-                                <div class="cardSide">
-                                    <div class="side cardFront">
-                                        <p class="textSide">Avant </p>
-                                        <img class="sideImg" src="assets\img\menage_bureau.jpg" alt="Avant">
-                                    </div>
-                                    <div class="side cardBack">
-                                        <p class="textSide">Après</p>
-                                        <img class="sideImg" src="assets\img\entretion_bureau.jpg" alt="Après">
-                                    </div>
+                    <section class="d-flex">
+                        <div id="cardContainer" class="cardContainer">
+                            <div class="cardSide">
+                                <div class="side cardFront">
+                                    <p class="textSide">AVANT</p>
+                                    <img class="sideImg" src="assets\img\menage_bureau.jpg" alt="Après">
                                 </div>
-                            </div>
-                            <div id="cardContainer" class="cardContainer">
-                                <div class="cardSide">
-                                    <div class="side cardFront">
-                                        <p class="textSide">Avant </p>
-                                        <img class="sideImg" src="assets\img\menage_bureau.jpg" alt="Avant">
-                                    </div>
-                                    <div class="side cardBack">
-                                        <p class="textSide">Après</p>
-                                        <img class="sideImg" src="assets\img\entretion_bureau.jpg" alt="Après">
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="cardContainer" class="cardContainer">
-                                <div class="cardSide">
-                                    <div class="side cardFront">
-                                        <p class="textSide">Avant </p>
-                                        <img class="sideImg" src="assets\img\menage_bureau.jpg" alt="Avant">
-                                    </div>
-                                    <div class="side cardBack">
-                                        <p class="textSide">Après</p>
-                                        <img class="sideImg" src="assets\img\entretion_bureau.jpg" alt="Après">
-                                    </div>
+                                <div class="side cardBack">
+                                <p class="textSide">Après</p>
+                                    <img class="sideImg" src="assets\img\entretion_bureau.jpg" alt="Avant">
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <section>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#request">
-                            Demande de devis
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="request" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Demande de devis</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
+                        <div id="cardContainer" class="cardContainer">
+                            <div class="cardSide">
+                                <div class="side cardFront">
+                                    <img class="sideImg" src="assets\img\menage_bureau.jpg" alt="Après">
+                                </div>
+                                <div class="side cardBack">
+                                    <img class="sideImg" src="assets\img\entretion_bureau.jpg" alt="Avant">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cardContainer" class="cardContainer">
+                            <div class="cardSide">
+                                <div class="side cardFront">
+                                    <img class="sideImg" src="assets\img\menage_bureau.jpg" alt="Après">
+                                </div>
+                                <div class="side cardBack">
+                                    <img class="sideImg"  src="assets\img\entretion_bureau.jpg" alt="Avant">
                                 </div>
                             </div>
                         </div>

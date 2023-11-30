@@ -10,7 +10,7 @@ body{
     margin: 0 auto;
 }
 
-.cardSide{
+.card{
     width: 100%;
     height: 100%;
     position:absolute;
@@ -19,7 +19,7 @@ body{
     transform-style: preserve-3d;
 }
 
-.cardSide:hover{
+.card:hover{
     transform: rotateY(180deg);
 }
 
@@ -28,29 +28,14 @@ body{
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    border-radius: 5px;
+    
+}
+
+.cardFront{
+    background: cover;
 }
 
 .cardBack{
-   
-    transform: rotateY(180deg);
-}
-
-.sideImg{
-    width: 100%;
-    height: 100%;
     background: cover;
-    border-radius: 5px;
-}
-
-.textSide{
-    position: absolute;
-    top: 5px;
-    left: 85px;
-    padding: 10px;
-    background-color: #257b46b9;
-    color: white;
-    border-radius: 5px;
-    box-shadow: #257b4694 0px 5px 15px;
-    font-size: 25px;
+    transform: rotateY(180deg);
 }

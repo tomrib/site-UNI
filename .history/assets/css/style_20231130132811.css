@@ -1,0 +1,10 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.cardContainer{
+    width: 250px;
+    height: 320px;
+    
+}
