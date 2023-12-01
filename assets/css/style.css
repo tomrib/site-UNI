@@ -2,10 +2,58 @@
     padding: 0;
     margin: 0;
 }
+/*haed*/
+.headImg{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/femme.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 
+.displayLogo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.displayLogo p {
+    font-size: 25px;
+    color: #257b46;
+}
+
+
+.displayLogo button{
+    background-color: #257b46;
+    border: none;
+    border-radius: 25px;
+}
+.displayLogo button:hover{
+    background-color: #fff;
+    color: #257b46;
+    border-radius: 25px;
+}
+
+.headLogo{
+    width: 230px;
+}
+/* retire la bande blanc a droite*/
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
     --bs-gutter-x:0px;
 }
+/* formulaire */
+span{
+    color: #ff0000;
+}
+
+.invalid-input{
+    border: 1px solid #ff0000;
+}
+/* card */
 .displayContainer{
     display: flex;
 }

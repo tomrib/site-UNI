@@ -1,3 +1,6 @@
+<?php
+require_once "controller/indexController.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,7 +27,7 @@
 
     <meta http-equiv="Content-Language" content="fr-FR">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8iNl4i6TQ/uY3ZLb8+U5dDJtJd5filK+JL61z5L/6Zz9l+Z6Z5uRdZQz4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -38,7 +41,7 @@
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Basculer la navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="navbarNavAltMarkup" >
+            <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">
                         <font style="vertical-align: inherit;">
@@ -65,13 +68,23 @@
         </div>
     </nav>
 
+    <div class="container-fluid">
+        <section>
+            <div class="headImg">
+                <div class="displayLogo">
+                    <img class="headLogo" src="assets/img/logo/logo_uni_512x512_transparent.png" alt="Le logo est un triangle de couleur verte, et au centre, il y a un balai de couleur vert pâle qui laisse des traces de propreté.">
+                    <p>Spécialiste de la propreté</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#request">
+                        Demande votre devis
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col">
-                <section>
-                    <img src="assets/img/logo/logo_uni_512x512_transparent.png" alt="Le logo est un triangle de couleur verte, et au centre, il y a un balai de couleur vert pâle qui laisse des traces de propreté.">
-                    <p>Spécialiste de la propreté</p>
-                </section>
                 <section>
                     <div class="text-center m-5">
                         <div class="d-flex">
@@ -93,63 +106,65 @@
                 </section>
                 <section>
                     <h2>Nos services</h2>
+                    <P>DES PROFESSIONNELS À VOTRE SERVICE</P>
+                    <P>UNI Entretien est spécialiste de la propreté pour les entreprises et collectivités. Nos services s'adaptent à toutes situations.</P>
                     <div class="d-flex">
                         <div class="card m-2" style="width: 18rem; ">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>VITRERIE</h3>
+                                <p class="card-text">Nettoyage de vitre d’accès difficle.</p>
                             </div>
                         </div>
                         <div class="card m-2" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>ENTRETIEN DES LOCAUX</h3>
+                                <p class="card-text">Opérations d’entretien et de maintenance.</p>
                             </div>
                         </div>
                         <div class="card m-2" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>ENTRETIEN DES BUREAUX</h3>
+                                <p class="card-text">Propreté de vos bureaux et locaux professionnels.</p>
                             </div>
                         </div>
                         <div class="card m-2" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>SYNDICS DE COPROPRIÉTÉ​</h3>
+                                <p class="card-text">Entretien de votre immeuble.</p>
                             </div>
                         </div>
                     </div>
                     <div class="d-flex">
                         <div class="card m-2" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>REMISE EN ÉTAT</h3>
+                                <p class="card-text">Remise en état après travaux et sinistres.</p>
                             </div>
                         </div>
                         <div class="card m-2" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>DÉBARRASSAGE</h3>
+                                <p class="card-text">Enlèvement des encombrants.</p>
                             </div>
                         </div>
                         <div class="card m-2" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>DÉCONTAMINATION</h3>
+                                <p class="card-text">Après dégâts des eaux et incendie</p>
                             </div>
                         </div>
                         <div class="card m-2" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/img/van.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card m-2 m-auto " style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3>DÉSINFECTION</h3>
+                                <p class="card-text">Après cas covid</p>
                             </div>
                         </div>
                     </div>
@@ -196,30 +211,117 @@
                     </div>
                 </section>
                 <section>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#request">
-                        Demande de devis
-                    </button>
-
                     <!-- Modal -->
                     <div class="modal fade" id="request" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h2 class="modal-title fs-5" id="exampleModalLabel">Demande de devis</h2>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
+                                <!-- Formulaire de demande de devis -->
+                                <form action="" method="post">
+                                    <div class="modal-body">
+                                        <div class="displayForm">
+                                            <!-- Informations personnelles -->
+                                            <div class="d-flex">
+                                                <div class="m-3">
+                                                    <label for="firstname" class="form-label">Prénom<span>*</span></label>
+                                                    <input type="text" class="form-control <?php echo isset($formError['firstname']) ? 'invalid-input' : ''; ?>" value="" id="firstname" name="firstname" aria-describedby="Prénom">
+                                                    <p><?= @$formError['firstname'] ?></p>
+                                                </div>
+                                                <div class="m-3">
+                                                    <label for="lastname" class="form-label">Nom<span>*</span></label>
+                                                    <input type="text" class="form-control  <?php echo isset($formError['lastname']) ? 'invalid-input' : ''; ?>" value="" id="lastname" name="lastname" aria-describedby="Nom">
+                                                    <p><?= @$formError['lastname'] ?></p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Informations sur l'entreprise -->
+                                            <div class="d-flex">
+                                                <div class="m-3">
+                                                    <label for="companyName" class="form-label">Nom de l'entreprise<span>*</span></label>
+                                                    <input type="text" class="form-control  <?php echo isset($formError['companyName']) ? 'invalid-input' : ''; ?>" value="" name="companyName" id="companyName" aria-describedby="Nom de l'entreprise">
+                                                    <p><?= @$formError['companyName'] ?></p>
+                                                </div>
+                                                <div class="m-3">
+                                                    <label for="phone" class="form-label">Numéro de téléphone<span>*</span></label>
+                                                    <input type="tel" class="form-control <?php echo isset($formError['phone']) ? 'invalid-input' : ''; ?>" value="" name="phone" id="phone" aria-describedby="Numéro de téléphone">
+                                                    <p><?= @$formError['phone'] ?></p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Informations de contact -->
+                                            <div>
+                                                <div class="m-3">
+                                                    <label for="email" class="form-label">E-mail<span>*</span></label>
+                                                    <input type="email" class="form-control <?php echo isset($formError['email']) ? 'invalid-input' : ''; ?>" name="email" value="" id="email" aria-describedby="email">
+                                                    <p><?= @$formError['email'] ?></p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Autres informations -->
+                                            <div class="d-flex">
+                                                <div class="m-3">
+                                                    <label for="surface" class="form-label">Surface (en m2)<span>*</span></label>
+                                                    <input type="number" min="0" class="form-control <?php echo isset($formError['surface']) ? 'invalid-input' : ''; ?>" name="surface" value="" id="surface" aria-describedby="Surface (en m2)">
+                                                    <p><?= @$formError['surface'] ?></p>
+                                                </div>
+
+                                                <div class="m-3">
+                                                    <label for="frequency" class="form-label">Fréquence<span>*</span></label>
+                                                    <select type="text" class="form-control <?php echo isset($formError['frequency']) ? 'invalid-input' : ''; ?>" name="frequency" value="" id="frequency" aria-describedby="telephone">
+                                                        <!-- Options pour la fréquence -->
+                                                        <option disabled selected value="">Veuillez sélectionner</option>
+                                                        <option value="1 fois par semaine">1 fois par semaine</option>
+                                                        <option value="2 fois par semaine">2 fois par semaine</option>
+                                                        <option value="3 fois par semaine">3 fois par semaine</option>
+                                                        <option value="4 fois par semaine">4 fois par semaine</option>
+                                                        <option value="5 fois par semaine">5 fois par semaine</option>
+                                                        <option value="6 fois par semaine">6 fois par semaine</option>
+                                                        <option value="7 fois par semaine">7 fois par semaine</option>
+                                                        <option value="Mensuelle">Mensuelle</option>
+                                                        <option value="Occasionnelle">Occasionnelle</option>
+                                                    </select>
+                                                    <p><?= @$formError['frequency'] ?></p>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="m-3">
+                                                    <label for="city" class="form-label">Ville<span>*</span></label>
+                                                    <input type="text" class="form-control <?php echo isset($formError['city']) ? 'invalid-input' : ''; ?>" name="city" value="" id="city" aria-describedby="Ville">
+                                                    <p><?= @$formError['city'] ?></p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Zone de commentaire -->
+                                            <div class="form-floating m-3">
+                                                <textarea class="form-control <?php echo isset($formError['message']) ? 'invalid-input' : ''; ?>" placeholder="Laisser un commentaire ici" id="message" style="height: 100px" name="message" value=""></textarea>
+                                                <label for="message">Votre message (optionnel)</label>
+                                                <p><?= @$formError['message'] ?></p>
+                                            </div>
+
+                                            <!-- Consentement -->
+                                            <div class="form-check m-3">
+                                                <input class="form-check-input <?php echo isset($formError['flexCheck']) ? 'invalid-input' : ''; ?>" type="checkbox" name="flexCheck" value="" id="flexCheck">
+                                                <label class="form-check-label" for="flexCheck">
+                                                    En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler.<span>*</span>
+                                                </label>
+                                                <p><?= @$formError['flexCheck'] ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Pied de la fenêtre modale -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        <button type="submit" id="submitForm" class="btn btn-primary">Soumettre</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </section>
+
             </div>
         </div>
     </div>
@@ -248,13 +350,14 @@
 
         <!-- Copyright -->
         <section>
-            <p>&copy; 2023 Votre Site. Tous droits réservés.</p>
+            <p>&copy; 2023 <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">Ribeiro Tommy</a>. Tous droits réservés.</p>
         </section>
     </footer>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=VOTRE_ID"></script>
     <script src="assets/js/analytics.js"></script>
-
+    <script src="assets/js/script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
