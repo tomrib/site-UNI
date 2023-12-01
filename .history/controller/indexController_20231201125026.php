@@ -1,0 +1,4 @@
+<?php
+if (!empty($)) {
+    # code...
+}

@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    --bs-gutter-x:0px;
+}
+.displayContainer{
+    display: flex;
+}
+.cardContainer{
+    width: 250px;
+    height: 320px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.cardSide{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 500ms ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    
+}
+
+.cardSide:hover{
+    transform: rotateY(180deg);
+}
+
+.side{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cardBack{
+    transform: rotateY(180deg);
+}
+
+.sideImg{
+    width: 100%;
+    height: 100%;
+    background: cover;
+    border-radius: 10px;
+}
+
+.textSide{
+    position: absolute;
+    top: 5px;
+    left: 50%; /* Ajuster la position à 50% de la largeur pour la centrer */
+    transform: translateX(-50%); /* Déplacer vers la gauche de 50% de sa propre largeur pour la centrer */
+    padding: 10px;
+    background-color: #257b46b9;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: #257b4694 0px 5px 15px;
+    font-size: 25px;
+}
+
+/* Ajout de règles @media pour rendre le style réactif */
+
+@media (max-width: 828px) {
+    .imgBusiness
+    .cardContainer{
+    margin-top: 25px;
+}
+    .displayContainer{
+        flex-direction: column;
+    }
+
+    .cardContainer {
+        max-width: 100%; /* Utilisation de la largeur totale de l'écran pour les petits écrans */
+    }
+
+    .textSide {
+        font-size: 20px; /* Ajuster la taille de la police pour les petits écrans */
+    }
+}
+
+/* Ajoutez d'autres règles @media au besoin pour différentes tailles d'écran */
